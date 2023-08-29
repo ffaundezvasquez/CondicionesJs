@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Condicionales</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+
+<body class="flex in-column align-center">
+    <div id="wrapper" class="flex in-column justify-center align-center gap-20">
+
+
+        <header class="flex justify-center">
+            <h1>Desafío - Condiciones</h1>
+        </header>
+
+        <article id="ejercicio1" class="flex in-column align-center">
+            <header>
+                <h2>Primer ejercicio: Cambiar el DOM</h2>
+            </header>
+            <section class="flex in-column align-center gap-20">
+                <p>Se debe construir una página con una única imagen, al hacerle click a la imagen se le debe agregar un
+                    borde rojo de 2 pixeles, al hacerle click nuevamente se le debe quitar el borde.</p>
+                <p><strong>Solución:</strong> hacer click en la siguiente imagen.</p>
+                <img id="MetalImg" class="metal-img" src="./assets/img/heavymetal.webp" alt="manos alzadas en un cncierto">
+            </section>
+        </article>
+
+        <article id="ejercicio2" class="flex in-column justify-center gap-20">
+            <header class="flex justify-center">
+                <h2>Segundo ejercicio: Seleccionar Stickers</h2>
+            </header>
+            <section class="flex in-column gap-20">
+                <p>Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos disponibles. Para
+                    eso
+                    deberá existir un input debajo de cada imagen donde el usuario podrá ingresar un número. En caso de
+                    que
+                    la suma de todos los stickers seleccionados sea menor o igual 10 se indicará en un párrafo nuevo la
+                    cantidad de stickers llevados. Ejemplo "llevas 5 stickers" en cualquier otro caso se mostrará un
+                    texto
+                    que dice "Llevas demasiados stickers".</p>
+                <p><strong>Solución:</strong> Ingresar cantidad de stickers en los inputs y presionar el botón verificar
+                </p>
+
+                <div class="stickers flex justify-center align-center gap-20">
+                    <div class="sticker flex in-column justify-center align-center gap-10">
+                        <h3>Suvliminal</h3>
+                        <img src="./assets/img/suvliminallogo.jpg" alt="Sticker de banda suvliminal">
+                        <input type="number" name="sticker" id="SuvSticker" value="0" min="0" max="10">
+                    </div>
+                    <div class="sticker flex in-column justify-center align-center gap-10">
+                        <h3>Danzing</h3>
+                        <img src="./assets/img/danzing.jpg" alt="Sticker de Danzing">
+                        <input type="number" name="sticker" id="DanzingSticker" value="0" min="0" max="10">
+                    </div>
+                    <div class="sticker flex in-column justify-center align-center gap-10">
+                        <h3>Valhallan</h3>
+                        <img src="./assets/img/valhallan.jpg" alt="Sticker de valhallan">
+                        <input type="number" name="sticker" id="ValhallanSticker" value="0" min="0" max="10">
+                    </div>
+                </div>
+                <div class="stickers-result flex in-column align-center">
+                    <p class="message" id="showMessage"></p>
+                    <button class="verify-button" id="verifyBtn">Verificar</button>
+                </div>
+            </section>
+        </article>
+
+        <article id="ejercicio3">
+            <header class="flex justify-center">
+                <h2>Tercer ejercicio: Ingresar el password</h2>
+            </header>
+            <section class="flex in-column gap-20">
+                <p>Se debe construir una página con 3 select y opciones con dígitos del 1 al 9, al hacer click a la
+                    opción
+                    ingresar se debe verificar que el password sea 911 y en ese caso mostrar debajo del botón ingresar,
+                    un
+                    párrafo con el contenido "password 1 correcto", en caso de que el password sea 714 se debe mostrar
+                    en el
+                    párrafo "password 2 es correcto", si ingresa otro valor se debe mostrar "password incorrecto".</p>
+                <p><strong>Solución:</strong> Elegir un número de cada select y luego presionar el botón Ingresar.</p>
+
+                <div class="verify-password flex in-column align-center gap-10">
+                    <h2>Ingresa el Password</h2>
+                    <div class="select-digit flex justify-center gap-30">
+                        <select id="numberOne" name="number-password">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="numberTwo" name="number-password">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <select id="numberThree" name="number-password">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+
+                    <p class="result-password message" id="resultPassword"></p>
+
+                    <button class="into-btn" id="intoBtn">
+                        Ingresar
+                    </button>
+                </div>
+            </section>
+        </article>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+p {
+    font-weight: 300;
+    margin: 0 0 10px;
+    line-height: 25px;
+}
+
+article {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    background: #8f8f8f;
+    color: #ffffff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #1bc2c2;
+    font-weight: 500;
+}
+
+button:active {
+    background: #a0a0a0;
+    color: #FFF;
+    font-weight: 500;
+}
+
+input[type=number] {
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    width: 50%;
+}
+
+select {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.message {
+    display: none;
+    background: #0f6903;
+    padding: 10px;
+    color: #FFF;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#wrapper {
+    max-width: 1000px;
+    padding: 10px 40px;
+}
+
+.flex {
+    display: flex;
+}
+
+.in-column {
+    flex-direction: column;
+}
+
+.in-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.metal-img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.sticker img {
+    max-width: 200px;
+    border: 2px solid #ccc;
+}
+
+.red-border {
+    border: 4px solid red;
+}
